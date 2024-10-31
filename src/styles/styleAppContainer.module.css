@@ -1,0 +1,15 @@
+.appContainer {
+    display: grid;
+    grid-template-areas: 
+    ". logo ."
+    ". header ."
+    "add update delete"
+    ". container .";
+    
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 60vw;
+
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+.deleteButton {
+    grid-area: delete;
+    outline: red 0.5em double;
+    height: 100%;
+    width: 100%;
+}

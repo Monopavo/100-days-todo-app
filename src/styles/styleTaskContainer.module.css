@@ -1,0 +1,6 @@
+.taskContainer {
+    grid-area: container;
+    outline: black 0.5em double;
+    height: 100%;
+    width: 100%;
+}
