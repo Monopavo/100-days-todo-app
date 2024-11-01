@@ -9,10 +9,9 @@
     grid-template-rows: repeat(auto, 1fr);
 
     background-color: var(--primary-colour);
-    border: var(--primary-colour) groove 1em;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    outline: var(--secondary-color) ridge 0.2em;
+    border: var(--primary-colour) double 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     height: auto;
     width: 100%;
 }
@@ -25,4 +24,4 @@
     align-items: center;
     height: 100vh;
     transform: scale(0.66);
-};
+}

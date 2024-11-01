@@ -1,4 +1,4 @@
 .taskItem {
-    border: var(--secondary-color) ridge 0.5em;
-    outline: var(--primary-color) ridge 0.5em;
+    border: var(--secondary-color) ridge 0.5rem;
+    outline: var(--primary-color) ridge 0.5rem;
 }

@@ -1,10 +1,11 @@
 .updateButton {
     grid-area: update;
     background-color: hsla(200, 50%, 50%, 0.9);
-    border: var(--secondary-color) ridge 0.2em; 
-    border-radius: 5%;
-    outline: var(--primary-color) ridge 0.2em;
-    padding: 1em;
+    border: var(--secondary-color) double 0.2rem; 
+    border-radius: 0.5rem;
+    outline: var(--primary-color) double 0.2rem;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
 }
 
 .updateButton:hover {
