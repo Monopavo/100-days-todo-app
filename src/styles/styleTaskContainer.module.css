@@ -1,6 +1,5 @@
 .taskContainer {
     grid-area: container;
-    outline: black 0.5em double;
-    height: 100%;
-    width: 100%;
+    border: var(--secondary-color) ridge 0.5em;
+    outline: var(--primary-color) ridge 0.5em;
 }

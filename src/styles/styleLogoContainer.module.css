@@ -1,0 +1,5 @@
+.logoContainer {
+    grid-area: logo;
+    border: var(--secondary-color) double 0.2em;
+    outline: var(--primary-color) double 0.2em;
+}

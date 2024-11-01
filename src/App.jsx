@@ -1,8 +1,9 @@
 import React, {StrictMode} from "react";
+import AnimationFrame from "./components/AnimationContainer.jsx";
 import ButtonAdd from "./components/ButtonAdd.jsx";
 import ButtonDelete from "./components/ButtonDelete.jsx";
 import ButtonUpdate from "./components/ButtonUpdate.jsx";
-import LogoFrame from "./components/LogoFrame.jsx";
+import LogoFrame from "./components/LogoContainer.jsx";
 import TaskContainer from "./components/TaskContainer.jsx";
 import TaskItem from "./components/TaskItem.jsx";
 import TodoHeader from "./components/TodoHeader.jsx";
@@ -13,14 +14,12 @@ const App = () => {
   return (
     <React.StrictMode>
       <div className={styles.appContainer}>
+        <AnimationContainer /><LogoContainer /><AnimationCOntainer />
         <TodoHeader />
-        <LogoFrame />
+        <ButtonAdd /><ButtonDelete /><ButtonUpdate />
         <TaskContainer>  
             {/*TaskItems instantiate here*/}
-        </TaskContainer> 
-        <ButtonAdd />
-        <ButtonDelete />
-        <ButtonUpdate />
+        </TaskContainer>
       </div>
     </React.StrictMode>
   )

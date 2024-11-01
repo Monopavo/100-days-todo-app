@@ -4,7 +4,7 @@ import styles from "../styles/styleTaskItem.module.css";
 const TaskItem = () => {
     
     return(
-        <p className={styles.taskItem}>WIP</p>
+        <li className={styles.taskItem}>WIP</li>
     )
 }
 

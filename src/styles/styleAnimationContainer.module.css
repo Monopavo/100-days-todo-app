@@ -1,0 +1,4 @@
+.animationContainer {
+    grid-area: animation;
+    background-color: var(--secondary-color);
+}

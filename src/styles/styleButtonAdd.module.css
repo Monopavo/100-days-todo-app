@@ -1,6 +1,11 @@
 .addButton {
     grid-area: add;
-    outline: green 0.5em double;
-    height: 100%;
-    width: 100%;
+    background-color: hsla(100, 50%, 50%, 0.9);
+    border: var(--secondary-color) ridge 0.2em;
+    outline: var(--primary-color) ridge 0.2em;
+    padding: 1em;
+}
+
+.addButton:hover {
+    cursor: pointer;
 }

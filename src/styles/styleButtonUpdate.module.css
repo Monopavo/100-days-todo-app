@@ -1,6 +1,11 @@
 .updateButton {
     grid-area: update;
-    outline: blue 0.5em double;
-    height: 100%;
-    width: 100%;
+    background-color: hsla(200, 50%, 50%, 0.9);
+    border: var(--secondary-color) ridge 0.2em; 
+    outline: var(--primary-color) ridge 0.2em;
+    padding: 1em;
+}
+
+.updateButton:hover {
+    cursor: pointer;
 }
