@@ -1,0 +1,16 @@
+* {
+    --primary-colour: hsla(0, 50%, 0%, 0.5);
+    --secondary-color: hsla(0, 0%, 50%, 0.8);
+    --tertiary-color: hsla(0, 0%, 100%, 0.9);
+    
+    background-color: var(--primary-colour);
+    color: var(--tertiary-color);
+    box-sizing: border-box;
+    font-size: 0.75em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}

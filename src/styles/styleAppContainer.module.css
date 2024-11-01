@@ -1,31 +1,28 @@
-* {
-    --primary-colour: hsla(0, 50%, 0%, 0.5);
-    --secondary-color: hsla(0, 0%, 50%, 0.8);
-    --tertiary-color: hsla(0, 0%, 100%, 0.9);
-    
-    background-color: var(--primary-colour);
-    color: var(--tertiary-color);
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-
 .appContainer {
     display: grid;
     grid-template-areas:
-    "animation logo animation"
+    "animLeft logo animRight"
     "header header header"
     "add delete update"
     "container container container";
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: repeat(auto, 1fr);
 
     background-color: var(--primary-colour);
-    border: var(--primary-colour) ridge 0.2em;
+    border: var(--primary-colour) groove 1em;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
     outline: var(--secondary-color) ridge 0.2em;
-    scale: 0.75;
+    height: auto;
+    width: 100%;
 }
+
+.flexContainer {
+    background: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    transform: scale(0.66);
+};

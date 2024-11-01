@@ -2,6 +2,7 @@
     grid-area: delete;
     background-color: hsla(0, 50%, 50%, 0.9);
     border: var(--secondary-color) ridge 0.2em;
+    border-radius: 5%;
     outline: var(--primary-color) ridge 0.2em;
     padding: 1em;
 }

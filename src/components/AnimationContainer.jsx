@@ -1,12 +1,11 @@
 import React, {useState} from "react";
-import styles from "../styles/AnimationContainer.module.css";
+import styles from "../styles/styleAnimationContainer.module.css";
 
-const AnimationContainer = () => {
+const AnimationContainer = ({className}) => {
     
     return(
-        <div className={styles.AnimationFrame}></div>
+        <figure className={`${styles.animationContainer} ${className}`}>TEST</figure>
     )
-};
-
+}
 
 export default AnimationContainer;

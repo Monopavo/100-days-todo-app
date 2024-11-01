@@ -1,5 +1,15 @@
 .todoHeader {
+    background-color: var(--primary-color);
     grid-area: header;
-    border: var(--secondary-color) double 0.10em;
-    outline: var(--primary-color) double 0.10em;
+    text-align: center;
+    font-size: 4em;
+
+    animation: headerScroll 6s infinite forwards;
+}
+
+@keyframes headerScroll {
+    0% {transform: translateX(0%) skewX(0);}
+    25% {transform: translateX(100%) skewX(-25deg); visibility: hidden;}
+    50% {transform: translateX(-100%) skewX(-50deg); visibility: hidden;}
+    100% {transform: translateX(0%) skewX(0); visibility: visible;}
 }

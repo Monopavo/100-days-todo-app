@@ -1,4 +1,17 @@
 .animationContainer {
-    grid-area: animation;
     background-color: var(--secondary-color);
+    border: var(--secondary-color) double 0.2em;
+    outline: var(--primary-color) double 0.2em;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.animLeft {
+    background-color: blue;
+    border-bottom-left-radius: 5%;
+}
+
+.animRight {
+    background-color: green;
+    border-bottom-right-radius: 5%;
 }
