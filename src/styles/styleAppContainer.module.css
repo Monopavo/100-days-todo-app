@@ -1,27 +1,22 @@
-.appContainer {
-    display: grid;
-    grid-template-areas:
-    "animLeft logo animRight"
-    "header header header"
-    "add delete update"
-    "container container container";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-
+* {
+    --primary-colour: hsla(0, 50%, 0%, 0.5);
+    --secondary-color: hsla(0, 0%, 75%, 0.8);
+    --tertiary-color: hsla(0, 0%, 100%, 0.9);
+    
     background-color: var(--primary-colour);
-    border: var(--primary-colour) double 0.5rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    height: auto;
+    color: var(--tertiary-color);
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.50rem;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
-}
+    object-fit: scale-down;
 
-.flexContainer {
-    background: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100vh;
-    transform: scale(0.66);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-colour);
+    overflow-y: none;
+    overflow-x: none;
 }
