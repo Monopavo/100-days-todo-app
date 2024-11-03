@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import ButtonAdd from "./components/ButtonAdd.jsx";
-import ButtonDelete from "./components/ButtonDelete.jsx";
 import LogoContainer from "./components/LogoContainer.jsx";
 import TaskContainer from "./components/TaskContainer.jsx";
 import TodoHeader from "./components/TodoHeader.jsx";
@@ -17,16 +16,17 @@ const App = () => {
 
   return (
     <React.StrictMode>
+      <div className={styles.appContainer}>
         <TodoHeader/>
         <LogoContainer/> 
         <ButtonAdd
           list={list}
           setList={setList}/>
-        <ButtonDelete/>
-      <TaskContainer
+        <TaskContainer
           handleTextInput={handleTextInput}
           list={list}
-          setList={list}/>
+          setList={setList}/>
+      </div>
     </React.StrictMode>
   );
 };

@@ -1,8 +1,26 @@
 .taskItem {
+    display: flex;
     border: var(--secondary-color) solid 0.05rem;
     border-radius: 0.2rem;
     outline: var(--primary-color) solid 0.2rem;
+
     font-size: 1rem;
+    flex-grow: 1;
     height: auto;
-    width: auto;
+    min-height: 10%;
+    max-height: 25%;
+    width: 100%;
+    min-width: 0;
+}
+
+.taskItemInput {
+    border: var(--secondary-color) solid 0.05rem;
+    border-radius: 0.2rem;
+    outline: var(--primary-color) solid 0.2rem;
+
+    font-size: 1rem;
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    min-width: 0;
 }

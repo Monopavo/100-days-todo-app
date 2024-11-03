@@ -2,7 +2,6 @@
     border: var(--primary-color) solid 0.25rem;
     border-radius: 0.5rem;
     outline: var(--secondary-color) solid 0.25rem;
-    font-size: 0.75rem;
 
     position: absolute;
     height: 100%;
@@ -13,5 +12,4 @@
 
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
 }

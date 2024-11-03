@@ -2,24 +2,29 @@ import React from "react";
 import TaskItem from "./TaskItem.jsx";
 import styles from "../styles/styleTaskContainer.module.css";
 
-const TaskContainer = ({handleTextInput, list}) => {
+const TaskContainer = ({handleTextInput, list, setList}) => {
 
     return (
-        <div>
+        <>
             <ul className={styles.taskContainer}>
             {!list || list.length === 0 ? (
-                <TaskItem text="No tasks available."/>
+                <p>No tasks available.</p>
             ) : (
                 list.map((task, index) => (
                     <TaskItem
-                        key={index}
-                        text={task.text}
                         handleTextInput={handleTextInput}
                         index={index}
+                        list={list}
+                        setList={setList}
+
+                        task={task}
+                        id={task.id}
+                        key={task.id}
+                        text={task.text}
                     />))
                 )}
             </ul>
-        </div>
+        </>
     );
 };
     

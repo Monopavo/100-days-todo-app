@@ -1,19 +1,17 @@
-.buttonAdd {
-    background-color: hsla(100, 50%, 50%, 0.9);
+.buttonUpdate {
+    background-color: hsla(200, 50%, 50%, 0.9);
     border: var(--secondary-color) solid 0.2rem;
     border-radius: 0.5rem;
     outline: var(--primary-color) solid 0.2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     text-shadow: 1px 1px 1px black;
-    
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    height: 20%;
+
+    position: relative;
+    height: auto;
     width: 25%;
     z-index: 2;
 }
 
-.buttonAdd:hover {
+.buttonUpdate:hover {
     cursor: pointer;
 }
