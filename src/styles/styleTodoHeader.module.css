@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+
 .todoHeader {
     background-color: var(--primary-color);
+    border: var(--secondary-colour) double 0.4rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Tilt Prism', cursive;
 
     position: absolute;
     top: 0;
     left: 0;
-    height: 20%;
+    height: 10%;
     width: 50%;
-    z-index: 2;
 }

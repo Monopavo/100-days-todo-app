@@ -8,7 +8,7 @@ const TaskContainer = ({handleTextInput, list, setList}) => {
         <>
             <ul className={styles.taskContainer}>
             {!list || list.length === 0 ? (
-                <p>No tasks available.</p>
+                <TaskItem />
             ) : (
                 list.map((task, index) => (
                     <TaskItem

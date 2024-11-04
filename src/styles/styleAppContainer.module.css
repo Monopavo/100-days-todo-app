@@ -1,11 +1,20 @@
-* {
+@media (prefers-color-scheme: dark) {
+    :root {
     --primary-colour: hsla(0, 50%, 0%, 0.5);
-    --secondary-color: hsla(0, 0%, 75%, 0.8);
-    --tertiary-color: hsla(0, 0%, 100%, 0.9);
-    
+    --secondary-colour: hsla(0, 0%, 90%, 0.9);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --primary-colour: hsla(0, 0%, 90%, 0.9);
+    --secondary-colour: hsla(0, 50%, 0%, 0.5);
+    }
+}
+
+* {
     background-color: var(--primary-colour);
-    color: var(--tertiary-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary-colour);
     height: 100%;
     width: 100%;
     object-fit: scale-down;
@@ -13,6 +22,10 @@
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--primary-colour);
-    overflow-y: none;
-    overflow-x: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.appContainer {
+    border: var(--secondary-colour) double 0.2rem;
 }

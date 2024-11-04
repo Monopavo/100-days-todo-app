@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import ButtonDelete from "./ButtonDelete";
-import ButtonUpdate from "./ButtonUpdate";
+import ButtonEdit from "./ButtonEdit";
 import styles from "../styles/styleTaskItem.module.css";
 
 const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
     const [isEditable, setIsEditable] = useState(false);
-    
-    const handleBlur = () => {
-        setIsEditable(false);
+
+    const handleFocus = () => {
+        setIsEditable(true);
     };
 
     return(
@@ -15,16 +15,15 @@ const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
             <div className={styles.taskItem}>
                 <textarea 
                     className={styles.taskItemInput}
-                    onBlur={handleBlur}
-                    disabled={!isEditable}
                     placeholder="Enter your task here."
-                    type="text"
                     onChange={(e) => handleTextInput(e, index)}
+                    onFocus={handleFocus}
                     value={text}
                 />
-                <ButtonUpdate
+                <ButtonEdit
+                    isEditable={isEditable}
                     setIsEditable={setIsEditable}
-                    task={task}/>
+                />
                 <ButtonDelete
                     list={list}
                     setList={setList}

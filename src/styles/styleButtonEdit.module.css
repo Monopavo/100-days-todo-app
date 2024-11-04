@@ -1,7 +1,6 @@
 @import "../styles/animations.module.css";
 
-.buttonDelete {
-    background-color: hsl(0, 50%, 50%);
+.buttonEdit, .buttonSave {
     border: var(--secondary-colour) double 0.2rem;
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -10,9 +9,18 @@
     position: relative;
     height: auto;
     width: 25%;
+    z-index: 2;
 }
 
-.buttonDelete:hover {
+.buttonEdit:hover, .buttonSave:hover {
     cursor: pointer;
     animation: shrink-pulse 750ms infinite forwards;
+}
+
+.buttonEdit {
+    background-color: hsl(200, 50%, 50%);
+}
+
+.buttonSave {
+    background-color: hsl(100, 50%, 50%);
 }

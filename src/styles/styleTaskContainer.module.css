@@ -1,7 +1,6 @@
 .taskContainer {
-    border: var(--primary-color) solid 0.25rem;
+    border: var(--secondary-colour) double 0.4rem;
     border-radius: 0.5rem;
-    outline: var(--secondary-color) solid 0.25rem;
 
     position: absolute;
     height: 100%;
@@ -9,6 +8,7 @@
     top: 0;
     right: 0;
     overflow-y: scroll;
+    z-index: 2;
 
     display: flex;
     flex-flow: column nowrap;
