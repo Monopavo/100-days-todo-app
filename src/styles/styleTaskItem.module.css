@@ -17,7 +17,7 @@
 
 .taskItemInput {
     border: var(--secondary-colour) double 0.2rem;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
 
     font-size: 1rem;
     flex-grow: 1;
@@ -34,4 +34,48 @@
 
 .taskItemInput::placeholder {
     color: var(--secondary-colour);
+}
+
+
+
+
+/* Portrait Queries */
+
+@media (min-width: 500px) and (orientation: portrait) {
+    .taskItem, .taskItemInput {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) and (orientation: portrait) {
+    .taskItem, .taskItemInput {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 399px) and (orientation: portrait) {
+    .taskItem, .taskItemInput {
+        font-size: 0.8em;
+    }
+}
+
+
+/* Landscape Queries */
+
+@media (min-width: 1000px) and (orientation: landscape) {
+    .taskItem, .taskItemInput {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 999px) and (orientation: landscape) {
+    .taskItem, .taskItemInput {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 749px) and (orientation: landscape) {
+    .taskItem, .taskItemInput {
+        font-size: 0.8em;
+    }
 }

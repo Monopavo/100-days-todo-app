@@ -16,7 +16,7 @@ const ButtonAdd = ({list, setList}) => {
                 className={styles.buttonAdd}
                 onClick={addTask}
             >
-                ADD
+                {"\u002B"}
             </button>
         </>
     );

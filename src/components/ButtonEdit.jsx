@@ -3,7 +3,7 @@ import styles from "../styles/styleButtonEdit.module.css";
 
 const ButtonEdit = ({isEditable, setIsEditable}) => {
     const [classToggle, setClassToggle] = useState(styles.buttonEdit);
-    const [textToggle, setTextToggle] = useState("EDIT");
+    const [textToggle, setTextToggle] = useState("\u270E");
 
     const updateTask = () => {
         setIsEditable(!isEditable);
@@ -13,7 +13,7 @@ const ButtonEdit = ({isEditable, setIsEditable}) => {
         setClassToggle(isEditable ? 
             styles.buttonSave : styles.buttonEdit);
         setTextToggle(isEditable ? 
-            "SAVE" : "EDIT");
+            "\u2713" : "\u270E");
         }, [isEditable]);
    
     return(

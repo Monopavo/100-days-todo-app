@@ -6,7 +6,7 @@ const TodoHeader = () => {
     return(
         <>
             <h1 className={styles.todoHeader}>
-                Monopavo's To-Do App (WIP)
+                Monopavo's To-Do App
             </h1>
         </>
     );

@@ -1,15 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
-
 .todoHeader {
     background-color: var(--primary-color);
     border: var(--secondary-colour) double 0.4rem;
     text-align: center;
-    font-size: 3rem;
+    line-height: 8vh;
+    font-size: 2rem;
     font-family: 'Tilt Prism', cursive;
 
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 20%;
     width: 50%;
+}
+
+/* Portrait Queries */
+
+@media (min-width: 1000px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 799px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 749px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 699px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 399px) and (orientation: portrait) {
+    .todoHeader {
+        font-size: 0.85em;
+    }
+}
+
+
+/* Landscape Queries */
+
+@media (min-width: 1000px) and (orientation: landscape) {
+    .todoHeader {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 999px) and (orientation: landscape) {
+    .todoHeader {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 749px) and (orientation: landscape) {
+    .todoHeader {
+        font-size: 1.5em;
+    }
 }

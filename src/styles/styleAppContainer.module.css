@@ -1,14 +1,14 @@
 @media (prefers-color-scheme: dark) {
     :root {
-    --primary-colour: hsla(0, 50%, 0%, 0.5);
-    --secondary-colour: hsla(0, 0%, 90%, 0.9);
+    --primary-colour: hsl(0, 50%, 0%);
+    --secondary-colour: hsl(0, 0%, 90%);
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-    --primary-colour: hsla(0, 0%, 90%, 0.9);
-    --secondary-colour: hsla(0, 50%, 0%, 0.5);
+    --primary-colour: hsl(0, 0%, 90%);
+    --secondary-colour: hsl(0, 50%, 0%);
     }
 }
 
@@ -29,3 +29,6 @@
 .appContainer {
     border: var(--secondary-colour) double 0.2rem;
 }
+
+
+

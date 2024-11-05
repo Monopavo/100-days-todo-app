@@ -5,6 +5,10 @@ import styles from "../styles/styleTaskItem.module.css";
 
 const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
     const [isEditable, setIsEditable] = useState(false);
+    
+    const handleBlur= () => {
+        ButtonEdit.style.className === "buttonSave" && setIsEditable(false);
+    };
 
     const handleFocus = () => {
         setIsEditable(true);
@@ -16,6 +20,7 @@ const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
                 <textarea 
                     className={styles.taskItemInput}
                     placeholder="Enter your task here."
+                    onBlur={handleBlur}
                     onChange={(e) => handleTextInput(e, index)}
                     onFocus={handleFocus}
                     value={text}

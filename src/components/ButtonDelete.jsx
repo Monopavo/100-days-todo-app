@@ -14,7 +14,7 @@ const ButtonDelete = ({list, setList, task}) => {
                 className={styles.buttonDelete}
                 onClick={deleteTask}
             >
-                DELETE
+                &minus;
             </button>
         </>
     );
