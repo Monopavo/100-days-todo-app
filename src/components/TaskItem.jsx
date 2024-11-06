@@ -24,7 +24,7 @@ const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
                     onBlur={handleBlur}
                     onChange={(e) => handleTextInput(e, index)}
                     onFocus={handleFocus}
-                    value={`${index + 1}) ${text}`}
+                    value={task.text}
                     disabled={false}
                 />
                 <ButtonEdit
