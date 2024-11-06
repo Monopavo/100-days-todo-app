@@ -3,11 +3,12 @@ import ButtonDelete from "./ButtonDelete";
 import ButtonEdit from "./ButtonEdit";
 import styles from "../styles/styleTaskItem.module.css";
 
+
 const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
     const [isEditable, setIsEditable] = useState(false);
-    
+
     const handleBlur= () => {
-        ButtonEdit.style.className === "buttonSave" && setIsEditable(false);
+        !isEditable && setIsEditable(false);
     };
 
     const handleFocus = () => {
@@ -24,6 +25,7 @@ const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
                     onChange={(e) => handleTextInput(e, index)}
                     onFocus={handleFocus}
                     value={text}
+                    disabled={false}
                 />
                 <ButtonEdit
                     isEditable={isEditable}
@@ -32,10 +34,11 @@ const TaskItem = ({handleTextInput, index, list, setList, task, text}) => {
                 <ButtonDelete
                     list={list}
                     setList={setList}
-                    task={task}/>
+                    task={task}
+                    />
             </div>
         </>
     );
 };
 
-export default TaskItem
+export default TaskItem;
